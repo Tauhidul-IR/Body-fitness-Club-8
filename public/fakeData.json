@@ -1,0 +1,50 @@
+[
+    {
+        "id": "6334612db87456057ee6ffe1",
+        "img": "https://img.freepik.com/free-photo/handsome-black-man-is-engaged-gym_1157-29805.jpg?w=360",
+        "details": "Dumbbell Exercises for Building Muscle. Develop total-body strength and build maximum muscle mass with a simple set of dumbbells.",
+        "age": "25-40",
+        "name": "Dumbling",
+        "time": 10
+    },
+    {
+        "id": "6334612dc824b083fb99cc3f",
+        "img": "https://phantom-marca.unidadeditorial.es/efa9740df47cff7f9466ea78fd720074/crop/0x93/899x599/resize/1320/f/jpg/assets/multimedia/imagenes/2022/01/19/16426036798831.jpg",
+        "details": "The push-up (sometimes called a press-up in British English) is a common calisthenics exercise beginning from the prone position.",
+        "age": "35-40",
+        "name": "Push-Up",
+        "time": 15
+    },
+    {
+        "id": "6334612d7cd0e9945fcebac0",
+        "img": "https://images.contentstack.io/v3/assets/blt45c082eaf9747747/bltb17dae1b414b51b4/5de0ba0a6726b202fc5f058f/beginner_pullups.jpg?width=1200&height=630&fit=crop",
+        "details": "A pull-up is an upper-body strength exercise. The pull-up is a closed-chain movement where the body is suspended by the hands and pulls up.",
+        "age": "30-40",
+        "name": "Pull-Up",
+        "time": 12
+    },
+    {
+        "id": "6334612db0aee628fb6a9951",
+        "img": "https://static.toiimg.com/thumb/resizemode-4,width-400,msid-83110767/83110767.jpg",
+        "details": "A stationary bicycle is a device used as exercise equipment for indoor cycling.",
+        "age": "28-38",
+        "name": "A stationary bicycling",
+        "time": 20
+    },
+    {
+        "id": "6334612d804375c993d8dcbd",
+        "img": "https://www.asianskyshopbd.net/cdn/prod_img/thumbs/small202203230322454605.jpg",
+        "details": "Running is a workout that can boost your heart health, bone health, mood, energy, and more.",
+        "age": "20-25",
+        "name": "Runnig",
+        "time": 20
+    },
+    {
+        "id": "6334612daca526e966872bc1",
+        "img": "https://images.unsplash.com/photo-1521804906057-1df8fdb718b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2VpZ2h0bGlmdGluZ3xlbnwwfHwwfHw%3D&w=1000&q=80",
+        "details": "Weightlifting generally refers to activities in which people lift weights, often in the form of dumbbells or barbells.",
+        "age": "25-30",
+        "name": "Weight-Lifting",
+        "time": 5
+    }
+]
