@@ -6,7 +6,7 @@ const Cart = (props) => {
     // console.log(props.id)
     return (
         <div>
-            <div className="card w-72 bg-base-100 shadow-xl">
+            <div className="card w-72 bg-base-100 shadow-xl my-2">
                 <figure className="px-10 pt-10">
                     <img src={img} alt="Shoes" className="rounded-xl h-44" />
                 </figure>

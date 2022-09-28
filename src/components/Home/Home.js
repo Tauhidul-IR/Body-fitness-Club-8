@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
+import ReactDOM from 'react-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee, faDumbbell } from '@fortawesome/free-solid-svg-icons'
 
 const Home = () => {
     const [carts, setCarts] = useState([])
@@ -14,10 +17,9 @@ const Home = () => {
     return (
         <div className='grid grid-cols-4 gap-4 bg-white'>
             <div className='col-span-3'>
-                <div className='mb-10'>
+                <div className='mb-10 text-left ml-4 text-blue-900'>
                     <div>
-
-                        <h1 className='text-4xl my-3'>BODY-FITNESS-CLUB</h1>
+                        <h1 className='text-4xl my-3'><FontAwesomeIcon icon={faDumbbell} />BODY-FITNESS-CLUB</h1>
                     </div>
                     <h3>Select Today's Excersice</h3>
                 </div>
