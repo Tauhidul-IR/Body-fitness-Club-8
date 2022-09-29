@@ -1,9 +1,10 @@
 import React from 'react';
+import Break from '../Break/Break';
 
 const Summary = (props) => {
-    // console.log(props)
+    console.log(props.breakData)
     const { clickCart } = props
-    console.log(clickCart)
+    // console.log(clickCart)
 
     let newTime = 0;
     for (const cart of clickCart) {
@@ -37,7 +38,7 @@ const Summary = (props) => {
                         <ul className="menu menu-vertical lg:menu-horizontal bg-zinc-200 text-black rounded">
 
                             {
-                                props.breakTimes.map(times => <li><a>{times}sec</a></li>)
+                                props.breakData.map(breaks => <Break breaks={breaks}></Break>)
                             }
 
                         </ul>

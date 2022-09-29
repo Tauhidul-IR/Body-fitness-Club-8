@@ -7,8 +7,13 @@ import Summary from '../Summary/Summary';
 import { getStoredCart } from '../../utilities/fakedb';
 
 const Home = () => {
+    //for main data 
     const [carts, setCarts] = useState([])
+    //for show sum of time
     const [clickCart, setClickCart] = useState([])
+    //for breakData
+    const [breakData, setBreakData] = useState([])
+
 
     useEffect(() => {
         fetch('fakeData.json')
@@ -31,7 +36,31 @@ const Home = () => {
     //     setClickCart(savedCart);
     // }, [carts])
 
-    const breakTimes = [10, 20, 30, 40];
+
+
+    useEffect(() => {
+        fetch('breakData.json')
+            .then(res => res.json())
+            .then(data => setBreakData(data))
+    }, [])
+    // console.log(breakData)
+
+
+
+
+
+
+    // const breakTimes = [10, 20, 30, 40];
+
+
+
+
+
+
+
+
+
+
 
     const handleTOClick = (carts) => {
         // setClickCart(carts)
@@ -61,8 +90,9 @@ const Home = () => {
                     </div>
                 </div>
                 <div>
-                    <Summary breakTimes={breakTimes}
+                    <Summary breakData={breakData}
                         clickCart={clickCart}
+
                     ></Summary>
                 </div>
 
