@@ -46,13 +46,13 @@ const Summary = (props) => {
                         </ul>
                     </div>
                 </div>
-                <h2 className='text-2xl text-black mt-6 mb-3'>Exerciuse Details</h2>
+                <h2 className='text-2xl text-black mt-6 mb-3'>Exercise Details</h2>
                 <div>
                     <div className='bg-zinc-200 my-2 p-2 text-black rounded flex justify-between'>
-                        <h4>Excercise time </h4><span>{newTime}sec</span>
+                        <h4>Exercise time </h4><span>{newTime}sec</span>
                     </div>
                     <div className='bg-zinc-200 my-2 p-2 text-black rounded flex justify-between'>
-                        <h4>Bereak time </h4><span>{props.showBreak}sec</span>
+                        <h4>Break time </h4><span>{props.showBreak}sec</span>
                     </div>
                 </div>
                 <button className="btn btn-primary mt-8 w-full">Activity Completed</button>
