@@ -2,9 +2,9 @@ import React from 'react';
 import Break from '../Break/Break';
 
 const Summary = (props) => {
-    console.log(props.breakData)
+    console.log(props.showBreak)
     const { clickCart } = props
-    // console.log(clickCart)
+
 
     let newTime = 0;
     for (const cart of clickCart) {
@@ -38,7 +38,9 @@ const Summary = (props) => {
                         <ul className="menu menu-vertical lg:menu-horizontal bg-zinc-200 text-black rounded">
 
                             {
-                                props.breakData.map(breaks => <Break breaks={breaks}></Break>)
+                                props.breakData.map(breaks => <Break breaks={breaks}
+                                    loadBreakTime={props.loadBreakTime}
+                                ></Break>)
                             }
 
                         </ul>
@@ -50,7 +52,7 @@ const Summary = (props) => {
                         <h4>Excercise time </h4><span>{newTime}sec</span>
                     </div>
                     <div className='bg-zinc-200 my-2 p-2 text-black rounded flex justify-between'>
-                        <h4>Bereak time </h4><span>sec</span>
+                        <h4>Bereak time </h4><span>{props.showBreak}sec</span>
                     </div>
                 </div>
                 <button className="btn btn-primary mt-8 w-full">Button</button>

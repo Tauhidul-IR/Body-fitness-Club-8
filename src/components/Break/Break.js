@@ -1,10 +1,10 @@
 import React from 'react';
 
 const Break = (props) => {
-    console.log(props)
+
     return (
         <div>
-            <li><a>{props.breaks.time}sec</a></li>
+            <li onClick={() => props.loadBreakTime(props.breaks)}><a>{props.breaks.time}sec</a></li>
         </div>
     );
 };

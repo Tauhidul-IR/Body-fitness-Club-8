@@ -14,6 +14,8 @@ const Home = () => {
     //for breakData
     const [breakData, setBreakData] = useState([])
 
+    const [showBreak, setShowBreak] = useState(0);
+
 
     useEffect(() => {
         fetch('fakeData.json')
@@ -21,54 +23,31 @@ const Home = () => {
             .then(data => setCarts(data))
     }, [])
 
-    // useEffect(() => {
-    //     const storedCard = getStoredCart();
-    //     // console.log(storedCard)
-    //     const savedCart = [];
-    //     for (const id in storedCard) {
-    //         const addedProduct = carts.find(cart => cart.id === id)
-    //         if (addedProduct) {
-    //             // const quantity = storedCard[id]
-    //             // addedProduct.quantity = quantity;
-    //             savedCart.push(addedProduct)
-    //         }
-    //     }
-    //     setClickCart(savedCart);
-    // }, [carts])
-
-
 
     useEffect(() => {
         fetch('breakData.json')
             .then(res => res.json())
             .then(data => setBreakData(data))
     }, [])
-    // console.log(breakData)
 
+    const loadBreakTime = (breaks) => {
 
+        const breakValue = breaks.time
+        setShowBreak(breakValue)
 
-
-
-
-    // const breakTimes = [10, 20, 30, 40];
-
-
-
-
-
-
+    }
 
 
 
 
 
     const handleTOClick = (carts) => {
-        // setClickCart(carts)
+
         const newCart = [...clickCart, carts]
         setClickCart(newCart)
     }
 
-    // console.log(carts)
+
     return (
         <div>
             <div className='grid grid-cols-4 gap-4 bg-white'>
@@ -92,6 +71,8 @@ const Home = () => {
                 <div>
                     <Summary breakData={breakData}
                         clickCart={clickCart}
+                        loadBreakTime={loadBreakTime}
+                        showBreak={showBreak}
 
                     ></Summary>
                 </div>
