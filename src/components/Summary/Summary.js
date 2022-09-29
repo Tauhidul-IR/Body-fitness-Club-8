@@ -55,7 +55,7 @@ const Summary = (props) => {
                         <h4>Bereak time </h4><span>{props.showBreak}sec</span>
                     </div>
                 </div>
-                <button className="btn btn-primary mt-8 w-full">Button</button>
+                <button className="btn btn-primary mt-8 w-full">Activity Completed</button>
 
             </div>
         </div>
