@@ -25,19 +25,20 @@ const Summary = () => {
                 <h3 className='text-2xl text-black mt-6 mb-3'>Add a Break</h3>
                 <div>
                     <div>
-                        <div className="tabs tabs-boxed">
-                            <a className="tab">Tab 1</a>
-                            <a className="tab tab-active">Tab 2</a>
-                            <a className="tab">Tab 3</a>
-                        </div>
+                        <ul className="menu menu-vertical lg:menu-horizontal bg-zinc-200 text-black rounded">
+                            <li><a>Item 1</a></li>
+                            <li><a className='active'>Item 2</a></li>
+                            <li><a>Item 3</a></li>
+                            <li><a>Item 3</a></li>
+                        </ul>
                     </div>
                 </div>
                 <h2 className='text-2xl text-black mt-6 mb-3'>Exerciuse Details</h2>
                 <div>
-                    <div className='bg-slate-300 my-2 p-2 text-black rounded flex justify-between'>
+                    <div className='bg-zinc-200 my-2 p-2 text-black rounded flex justify-between'>
                         <h4>Excercise time </h4><span>second</span>
                     </div>
-                    <div className='bg-slate-300 my-2 p-2 text-black rounded flex justify-between'>
+                    <div className='bg-zinc-200 my-2 p-2 text-black rounded flex justify-between'>
                         <h4>Bereak time </h4><span>second</span>
                     </div>
                 </div>
