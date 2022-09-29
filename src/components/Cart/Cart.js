@@ -16,7 +16,7 @@ const Cart = (props) => {
                     <h4>For Age : {age}</h4>
                     <h4>Time Require : {time}</h4>
                     <div className="card-actions">
-                        <button className="btn btn-primary">Add To cart</button>
+                        <button className="btn btn-primary w-full">Add To cart</button>
                     </div>
                 </div>
             </div>
