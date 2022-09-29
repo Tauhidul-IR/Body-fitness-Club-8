@@ -1,6 +1,7 @@
 import React from 'react';
 
-const Summary = () => {
+const Summary = (props) => {
+    console.log(props)
     return (
         <div className='fixed'>
             <div className='mt-6 text-left'>
@@ -26,10 +27,11 @@ const Summary = () => {
                 <div>
                     <div>
                         <ul className="menu menu-vertical lg:menu-horizontal bg-zinc-200 text-black rounded">
-                            <li><a>Item 1</a></li>
-                            <li><a className='active'>Item 2</a></li>
-                            <li><a>Item 3</a></li>
-                            <li><a>Item 3</a></li>
+
+                            {
+                                props.breakTimes.map(times => <li><a>{times}sec</a></li>)
+                            }
+
                         </ul>
                     </div>
                 </div>

@@ -14,7 +14,9 @@ const Home = () => {
             .then(data => setCarts(data))
     }, [])
 
-    console.log(carts)
+    const breakTimes = [10, 20, 30, 40];
+
+    // console.log(carts)
     return (
         <div className='grid grid-cols-4 gap-4 bg-white'>
             <div className='col-span-3'>
@@ -34,7 +36,7 @@ const Home = () => {
                 </div>
             </div>
             <div>
-                <Summary></Summary>
+                <Summary breakTimes={breakTimes}></Summary>
             </div>
             <div>
                 <h1>Ans the question</h1>
