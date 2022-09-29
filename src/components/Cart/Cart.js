@@ -6,7 +6,7 @@ const Cart = (props) => {
 
     return (
         <div>
-            <div className="card w-72 bg-base-100 shadow-xl my-2">
+            <div className="card w-72 bg-slate-800 shadow-xl my-2">
                 <figure className="px-4 pt-4">
                     <img src={img} alt="Shoes" className="rounded-xl h-44" />
                 </figure>
