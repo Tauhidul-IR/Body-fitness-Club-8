@@ -4,9 +4,11 @@ import ReactDOM from 'react-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee, faDumbbell } from '@fortawesome/free-solid-svg-icons'
 import Summary from '../Summary/Summary';
+import { getStoredCart } from '../../utilities/fakedb';
 
 const Home = () => {
     const [carts, setCarts] = useState([])
+    const [clickCart, setClickCart] = useState([])
 
     useEffect(() => {
         fetch('fakeData.json')
@@ -14,7 +16,28 @@ const Home = () => {
             .then(data => setCarts(data))
     }, [])
 
+    // useEffect(() => {
+    //     const storedCard = getStoredCart();
+    //     // console.log(storedCard)
+    //     const savedCart = [];
+    //     for (const id in storedCard) {
+    //         const addedProduct = carts.find(cart => cart.id === id)
+    //         if (addedProduct) {
+    //             // const quantity = storedCard[id]
+    //             // addedProduct.quantity = quantity;
+    //             savedCart.push(addedProduct)
+    //         }
+    //     }
+    //     setClickCart(savedCart);
+    // }, [carts])
+
     const breakTimes = [10, 20, 30, 40];
+
+    const handleTOClick = (carts) => {
+        // setClickCart(carts)
+        const newCart = [...clickCart, carts]
+        setClickCart(newCart)
+    }
 
     // console.log(carts)
     return (
@@ -31,12 +54,15 @@ const Home = () => {
                         carts.map(cart => <Cart
                             cart={cart}
                             key={cart.id}
+                            hanldeTOClick={handleTOClick}
                         ></Cart>)
                     }
                 </div>
             </div>
             <div>
-                <Summary breakTimes={breakTimes}></Summary>
+                <Summary breakTimes={breakTimes}
+                    clickCart={clickCart}
+                ></Summary>
             </div>
             <div>
                 <h1>Ans the question</h1>

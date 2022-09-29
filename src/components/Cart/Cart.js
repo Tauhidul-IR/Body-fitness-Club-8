@@ -1,9 +1,9 @@
 import React from 'react';
 
 const Cart = (props) => {
-    console.log(props)
+
     const { name, id, img, age, time, details } = props.cart
-    // console.log(props.id)
+
     return (
         <div>
             <div className="card w-72 bg-base-100 shadow-xl my-2">
@@ -14,9 +14,9 @@ const Cart = (props) => {
                     <h2 className="card-title">{name}</h2>
                     <p>{details}</p>
                     <h4>For Age : {age}</h4>
-                    <h4>Time Require : {time}</h4>
+                    <h4>Time Require : {time}s</h4>
                     <div className="card-actions">
-                        <button className="btn btn-primary w-full">Add To cart</button>
+                        <button onClick={() => props.hanldeTOClick(props.cart)} className="btn btn-primary w-full">Add To cart</button>
                     </div>
                 </div>
             </div>

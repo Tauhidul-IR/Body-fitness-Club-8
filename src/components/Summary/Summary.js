@@ -1,7 +1,15 @@
 import React from 'react';
 
 const Summary = (props) => {
-    console.log(props)
+    // console.log(props)
+    const { clickCart } = props
+    console.log(clickCart)
+
+    let newTime = 0;
+    for (const cart of clickCart) {
+        newTime = newTime + cart.time
+    }
+
     return (
         <div className='fixed'>
             <div className='mt-6 text-left'>
@@ -38,7 +46,7 @@ const Summary = (props) => {
                 <h2 className='text-2xl text-black mt-6 mb-3'>Exerciuse Details</h2>
                 <div>
                     <div className='bg-zinc-200 my-2 p-2 text-black rounded flex justify-between'>
-                        <h4>Excercise time </h4><span>sec</span>
+                        <h4>Excercise time </h4><span>{newTime}sec</span>
                     </div>
                     <div className='bg-zinc-200 my-2 p-2 text-black rounded flex justify-between'>
                         <h4>Bereak time </h4><span>sec</span>
