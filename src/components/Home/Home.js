@@ -3,6 +3,7 @@ import Cart from '../Cart/Cart';
 import ReactDOM from 'react-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee, faDumbbell } from '@fortawesome/free-solid-svg-icons'
+import Summary from '../Summary/Summary';
 
 const Home = () => {
     const [carts, setCarts] = useState([])
@@ -32,7 +33,12 @@ const Home = () => {
                     }
                 </div>
             </div>
-            <div></div>
+            <div>
+                <Summary></Summary>
+            </div>
+            <div>
+                <h1>Ans the question</h1>
+            </div>
         </div>
     );
 };
